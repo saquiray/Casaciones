@@ -305,13 +305,10 @@ export default function Search() {
   };
 
   const clearFilters = () => {
+    console.log(selectedTesaurioPath);
     setSearchText("");
     setDebouncedText("");
-    setSelectedMonth("");
-    setSelectedYear("");
-    setSelectedTipoDocumento("");
     setSelectedTesaurioPath([]);
-    setSelectedFuente("");
   };
 
   useEffect(() => {
